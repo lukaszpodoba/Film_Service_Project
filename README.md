@@ -31,7 +31,7 @@ Film_Service_Project is a web application built on Jakarta EE technology. It all
     - **Forwarding Results**: Sets the `ResultSet` as a request attribute and forwards the request to `results.jsp` using: `request.getRequestDispatcher("/results.jsp").forward(request, response);`
     - **Exception Handling**: Catches potential exceptions (SQL issues, missing driver, invalid year format, forwarding errors) and displays appropriate error messages.
 
-### Views & Configuration
+## Views & Configuration
 - **index.jsp**:
   - **Functionality**: Provides a search form for users to input movie criteria (title, director, genre, actor, production year).
   - ** Form Submission**: Data is sent via the GET method to `/movies`, which is handled by `MovieServlet`.
@@ -42,7 +42,7 @@ Film_Service_Project is a web application built on Jakarta EE technology. It all
 - **web.xml**:
   - **Role**: Provides minimal but essential configuration to register the web application with a servlet container (Tomcat).
 
-### Technologies & Design Patterns
+## Technologies & Design Patterns
 - **Java SE & Jakarta EE (Servlet API)**: Leverages traditional Java web development techniques with servlets and JSP.
 - **JDBC & MySQL**: Uses JDBC for database connectivity. The `MovieDAO` class exemplifies the DAO pattern, separating data access logic from business logic.
 - **MVC Pattern**:
@@ -50,7 +50,7 @@ Film_Service_Project is a web application built on Jakarta EE technology. It all
   - **View**: JSP pages (`index.jsp` and `results.jsp`) that handle data presentation.
   - **Controller**: `MovieServlet` managing the request-response flow.
 
-### Example Workflow
+## Example Workflow
 - **User Interaction**:
   - The user opens `index.jsp` and sees the search form.
   - The user enters search criteria and submits the form.
